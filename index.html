@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloches de Bretagne — Inventaire des cloches de Bretagne</title>
+<meta name="description" content="Inventaire des cloches des églises et chapelles de Bretagne : 412 cloches dans 131 édifices, avec fondeurs, notes, poids, inscriptions et vidéos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg">
+</head>
+<body data-page="accueil">
+<main id="main">
+  <section class="hero">
+    <img alt="Cloches dans un beffroi breton" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow">Inventaire campanaire · depuis 2015</span>
+      <h1>Les voix de bronze de Bretagne</h1>
+      <p class="lead">Clocher après clocher, le relevé des cloches des églises et chapelles bretonnes : leur histoire, leurs fondeurs, leurs inscriptions, et le son de leurs volées.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="edifices.html">Explorer les édifices</a>
+        <a class="btn btn-ghost" href="carte.html">Voir la carte</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats"><div class="wrap" id="stats"></div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Dernières publications</span><h2>Récemment ajoutés</h2></div>
+      <a class="btn btn-line" href="edifices.html">Tous les édifices</a>
+    </div>
+    <div class="cards" id="recents"></div>
+  </div></section>
+
+  <section class="section alt"><div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Parcourir</span><h2>Par département</h2></div>
+      <p>Les cinq départements de la Bretagne historique, et quelques escapades campanaires au-delà.</p>
+    </div>
+    <div class="depts" id="depts"></div>
+  </div></section>
+
+  <section class="section"><div class="wrap split">
+    <div>
+      <span class="eyebrow">À paraître</span><h2>Prochains clochers</h2>
+      <p style="color:var(--ink-2)">Ces relevés ont été réalisés et seront publiés prochainement.</p>
+      <ul class="upcoming" id="upcoming"></ul>
+    </div>
+    <div class="yt-panel">
+      <span class="eyebrow" style="color:#e6c79c">Sur YouTube</span>
+      <h2>Écouter les sonneries</h2>
+      <p>Chaque visite est filmée : volées, tintements et angélus, enregistrés au plus près des cloches.</p>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bQ4JEL-8l5Q" title="Sonnerie de Tresbœuf" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+      <a class="btn btn-primary" href="https://www.youtube.com/channel/UCS46PbsI2C1U1CsxqMljhxg" target="_blank" rel="noopener">S'abonner à la chaîne</a>
+    </div>
+  </div></section>
+</main>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

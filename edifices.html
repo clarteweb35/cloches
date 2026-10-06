@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les édifices | Cloches de Bretagne</title>
+<meta name="description" content="Recherchez parmi les églises et chapelles de Bretagne dont les cloches ont été relevées.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg">
+</head>
+<body data-page="edifices">
+<main id="main">
+  <div class="page-head"><div class="wrap">
+    <span class="eyebrow">Inventaire</span><h1>Les édifices</h1>
+    <p>Recherchez une commune ou un édifice, ou filtrez par département et par type de bâtiment.</p>
+  </div></div>
+  <div class="wrap" style="padding-bottom:88px">
+    <div class="filters">
+      <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Commune, saint, édifice…" aria-label="Rechercher" autocomplete="off"></label>
+    </div>
+    <div class="chips" id="chips-dept" style="margin-top:12px"></div>
+    <div class="chips" id="chips-type" style="margin-top:8px"></div>
+    <p class="result-count" id="count"></p>
+    <div id="results"></div>
+  </div>
+</main>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

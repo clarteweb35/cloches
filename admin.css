@@ -1,0 +1,34 @@
+/* Formulaire « Commune, vidéo et cloches » dans l'éditeur d'édifice. */
+
+.cdb-box label { display: block; font-weight: 600; margin-bottom: 4px; }
+.cdb-box input[type="text"],
+.cdb-box input[type="url"],
+.cdb-box input[type="number"],
+.cdb-box textarea { width: 100%; }
+.cdb-box .description { display: block; margin-top: 4px; }
+.cdb-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px 16px; }
+.cdb-grid-2 { grid-template-columns: 1fr 1fr; }
+.cdb-grid p { margin: 6px 0; }
+.cdb-champ.cdb-textarea { grid-column: span 2; }
+@media (max-width: 900px) {
+  .cdb-grid, .cdb-grid-2 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .cdb-grid, .cdb-grid-2 { grid-template-columns: 1fr; }
+  .cdb-champ.cdb-textarea { grid-column: auto; }
+}
+
+.cdb-h { font-size: 1.1em; margin: 24px 0 4px; padding-top: 16px; border-top: 1px solid #dcdcde; }
+.cdb-ancien { background: #fcf6e8; border-left: 4px solid #9a6a32; padding: 8px 12px; }
+
+.cdb-cloche {
+  border: 1px solid #dcdcde; border-left: 4px solid #9a6a32; border-radius: 4px;
+  background: #fbfbfb; padding: 4px 16px 10px; margin: 14px 0;
+}
+.cdb-cloche legend {
+  display: flex; align-items: center; gap: 12px; width: 100%;
+  font-weight: 600; font-size: 1.05em; padding: 0 6px; background: #fbfbfb;
+}
+.cdb-actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+.cdb-actions .button { min-width: 32px; padding: 0 8px; }
+.cdb-supprimer { margin-left: 8px !important; }
